@@ -315,7 +315,7 @@ class Operator_Tracking(object):
 #    said errors, I was forced to roll-back the code. This is what is left. I also created a function that created boxes around the clusters 
 #    based on how many clusters there were so we were able to view them in Rviz.*****
 
-#    What the cluster function did was it clustered laser_data points based on euclidian distance. If there was a large enough cluster of 
+#    What the cluster function did was it clustered laser_data points based on euclidean distance. If there was a large enough cluster of 
 #    points then it would save them in a dictionary. Once going through the entire data set received from the laser data, using recusiion, which placed a 
 #    large burden on processing power, the line_check function would determine if each cluster of data has a linear relationship past a certain threshold. If they did
 #    have a linear relationship, then that cluster of data would most likely represent a wall. 
