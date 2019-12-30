@@ -1,0 +1,4 @@
+<launch>
+ <node pkg="operator_tracking" type="tracking.py" output="screen" name="scan_values">
+ </node> 
+</launch>

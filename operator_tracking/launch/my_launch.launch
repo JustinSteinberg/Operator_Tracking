@@ -1,0 +1,7 @@
+<launch>
+ <node pkg="operator_tracking" type="plan_points.py" name="planning_path" output="screen" required="true"/>
+ <node pkg="operator_tracking" type="tracking_V2.py" name="scan_values" output="screen" launch-prefix="terminator -x"/>
+ <node pkg="laser_filters" type="scan_to_scan_filter_chain" name="laser_filter" output="screen" required="true">
+   <rosparam command="load" file="$(find operator_tracking)/param/laser_filter_param.yaml" />
+ </node>
+</launch>
